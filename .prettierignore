@@ -1,0 +1,9 @@
+# Ignore artifacts:
+build
+coverage
+
+# Lock files
+package-lock.json
+
+# Mocks
+src/__mocks__

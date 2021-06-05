@@ -1,0 +1,413 @@
+{
+	"info": {
+		"_postman_id": "ea4a8cbe-3243-40da-a8a0-538e4ec8e8b6",
+		"name": "Binance Worker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Version",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/version",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"version"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "",
+								"value": "",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "text"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/version",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"version"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "\"1.0.0\""
+				}
+			]
+		},
+		{
+			"name": "Pairs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/pairs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"pairs"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pairs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pairs"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"pairs\": [\n        \"ETHBTC\",\n        \"LTCBTC\",\n        \"BNBBTC\",\n        \"NEOBTC\",\n        \"QTUMETH\",\n        \"EOSETH\",\n        \"SNTETH\",\n        \"BNTETH\",\n        \"BCCBTC\",\n        \"GASBTC\",\n        \"BNBETH\",\n        \"BTCUSDT\",\n        \"ETHUSDT\",\n        \"HSRBTC\",\n        \"OAXETH\",\n        \"DNTETH\",\n        \"MCOETH\",\n        \"ICNETH\",\n        \"MCOBTC\",\n        \"WTCBTC\",\n        \"WTCETH\",\n        \"LRCBTC\",\n        \"LRCETH\",\n        \"QTUMBTC\",\n        \"YOYOBTC\",\n        \"OMGBTC\",\n        \"OMGETH\",\n        \"ZRXBTC\",\n        \"ZRXETH\",\n        \"STRATBTC\",\n        \"STRATETH\",\n        \"SNGLSBTC\",\n        \"SNGLSETH\",\n        \"BQXBTC\",\n        \"BQXETH\",\n        \"KNCBTC\",\n        \"KNCETH\",\n        \"FUNBTC\",\n        \"FUNETH\",\n        \"SNMBTC\",\n        \"SNMETH\",\n        \"NEOETH\",\n        \"IOTABTC\",\n        \"IOTAETH\",\n        \"LINKBTC\",\n        \"LINKETH\",\n        \"XVGBTC\",\n        \"XVGETH\",\n        \"SALTBTC\",\n        \"SALTETH\",\n        \"MDABTC\",\n        \"MDAETH\",\n        \"MTLBTC\",\n        \"MTLETH\",\n        \"SUBBTC\",\n        \"SUBETH\",\n        \"EOSBTC\",\n        \"SNTBTC\",\n        \"ETCETH\",\n        \"ETCBTC\",\n        \"MTHBTC\",\n        \"MTHETH\",\n        \"ENGBTC\",\n        \"ENGETH\",\n        \"DNTBTC\",\n        \"ZECBTC\",\n        \"ZECETH\",\n        \"BNTBTC\",\n        \"ASTBTC\",\n        \"ASTETH\",\n        \"DASHBTC\",\n        \"DASHETH\",\n        \"OAXBTC\",\n        \"ICNBTC\",\n        \"BTGBTC\",\n        \"BTGETH\",\n        \"EVXBTC\",\n        \"EVXETH\",\n        \"REQBTC\",\n        \"REQETH\",\n        \"VIBBTC\",\n        \"VIBETH\",\n        \"HSRETH\",\n        \"TRXBTC\",\n        \"TRXETH\",\n        \"POWRBTC\",\n        \"POWRETH\",\n        \"ARKBTC\",\n        \"ARKETH\",\n        \"YOYOETH\",\n        \"XRPBTC\",\n        \"XRPETH\",\n        \"MODBTC\",\n        \"MODETH\",\n        \"ENJBTC\",\n        \"ENJETH\",\n        \"STORJBTC\",\n        \"STORJETH\",\n        \"BNBUSDT\",\n        \"VENBNB\",\n        \"YOYOBNB\",\n        \"POWRBNB\",\n        \"VENBTC\",\n        \"VENETH\",\n        \"KMDBTC\",\n        \"KMDETH\",\n        \"NULSBNB\",\n        \"RCNBTC\",\n        \"RCNETH\",\n        \"RCNBNB\",\n        \"NULSBTC\",\n        \"NULSETH\",\n        \"RDNBTC\",\n        \"RDNETH\",\n        \"RDNBNB\",\n        \"XMRBTC\",\n        \"XMRETH\",\n        \"DLTBNB\",\n        \"WTCBNB\",\n        \"DLTBTC\",\n        \"DLTETH\",\n        \"AMBBTC\",\n        \"AMBETH\",\n        \"AMBBNB\",\n        \"BCCETH\",\n        \"BCCUSDT\",\n        \"BCCBNB\",\n        \"BATBTC\",\n        \"BATETH\",\n        \"BATBNB\",\n        \"BCPTBTC\",\n        \"BCPTETH\",\n        \"BCPTBNB\",\n        \"ARNBTC\",\n        \"ARNETH\",\n        \"GVTBTC\",\n        \"GVTETH\",\n        \"CDTBTC\",\n        \"CDTETH\",\n        \"GXSBTC\",\n        \"GXSETH\",\n        \"NEOUSDT\",\n        \"NEOBNB\",\n        \"POEBTC\",\n        \"POEETH\",\n        \"QSPBTC\",\n        \"QSPETH\",\n        \"QSPBNB\",\n        \"BTSBTC\",\n        \"BTSETH\",\n        \"BTSBNB\",\n        \"XZCBTC\",\n        \"XZCETH\",\n        \"XZCBNB\",\n        \"LSKBTC\",\n        \"LSKETH\",\n        \"LSKBNB\",\n        \"TNTBTC\",\n        \"TNTETH\",\n        \"FUELBTC\",\n        \"FUELETH\",\n        \"MANABTC\",\n        \"MANAETH\",\n        \"BCDBTC\",\n        \"BCDETH\",\n        \"DGDBTC\",\n        \"DGDETH\",\n        \"IOTABNB\",\n        \"ADXBTC\",\n        \"ADXETH\",\n        \"ADXBNB\",\n        \"ADABTC\",\n        \"ADAETH\",\n        \"PPTBTC\",\n        \"PPTETH\",\n        \"CMTBTC\",\n        \"CMTETH\",\n        \"CMTBNB\",\n        \"XLMBTC\",\n        \"XLMETH\",\n        \"XLMBNB\",\n        \"CNDBTC\",\n        \"CNDETH\",\n        \"CNDBNB\",\n        \"LENDBTC\",\n        \"LENDETH\",\n        \"WABIBTC\",\n        \"WABIETH\",\n        \"WABIBNB\",\n        \"LTCETH\",\n        \"LTCUSDT\",\n        \"LTCBNB\",\n        \"TNBBTC\",\n        \"TNBETH\",\n        \"WAVESBTC\",\n        \"WAVESETH\",\n        \"WAVESBNB\",\n        \"GTOBTC\",\n        \"GTOETH\",\n        \"GTOBNB\",\n        \"ICXBTC\",\n        \"ICXETH\",\n        \"ICXBNB\",\n        \"OSTBTC\",\n        \"OSTETH\",\n        \"OSTBNB\",\n        \"ELFBTC\",\n        \"ELFETH\",\n        \"AIONBTC\",\n        \"AIONETH\",\n        \"AIONBNB\",\n        \"NEBLBTC\",\n        \"NEBLETH\",\n        \"NEBLBNB\",\n        \"BRDBTC\",\n        \"BRDETH\",\n        \"BRDBNB\",\n        \"MCOBNB\",\n        \"EDOBTC\",\n        \"EDOETH\",\n        \"WINGSBTC\",\n        \"WINGSETH\",\n        \"NAVBTC\",\n        \"NAVETH\",\n        \"NAVBNB\",\n        \"LUNBTC\",\n        \"LUNETH\",\n        \"TRIGBTC\",\n        \"TRIGETH\",\n        \"TRIGBNB\",\n        \"APPCBTC\",\n        \"APPCETH\",\n        \"APPCBNB\",\n        \"VIBEBTC\",\n        \"VIBEETH\",\n        \"RLCBTC\",\n        \"RLCETH\",\n        \"RLCBNB\",\n        \"INSBTC\",\n        \"INSETH\",\n        \"PIVXBTC\",\n        \"PIVXETH\",\n        \"PIVXBNB\",\n        \"IOSTBTC\",\n        \"IOSTETH\",\n        \"CHATBTC\",\n        \"CHATETH\",\n        \"STEEMBTC\",\n        \"STEEMETH\",\n        \"STEEMBNB\",\n        \"NANOBTC\",\n        \"NANOETH\",\n        \"NANOBNB\",\n        \"VIABTC\",\n        \"VIAETH\",\n        \"VIABNB\",\n        \"BLZBTC\",\n        \"BLZETH\",\n        \"BLZBNB\",\n        \"AEBTC\",\n        \"AEETH\",\n        \"AEBNB\",\n        \"RPXBTC\",\n        \"RPXETH\",\n        \"RPXBNB\",\n        \"NCASHBTC\",\n        \"NCASHETH\",\n        \"NCASHBNB\",\n        \"POABTC\",\n        \"POAETH\",\n        \"POABNB\",\n        \"ZILBTC\",\n        \"ZILETH\",\n        \"ZILBNB\",\n        \"ONTBTC\",\n        \"ONTETH\",\n        \"ONTBNB\",\n        \"STORMBTC\",\n        \"STORMETH\",\n        \"STORMBNB\",\n        \"QTUMBNB\",\n        \"QTUMUSDT\",\n        \"XEMBTC\",\n        \"XEMETH\",\n        \"XEMBNB\",\n        \"WANBTC\",\n        \"WANETH\",\n        \"WANBNB\",\n        \"WPRBTC\",\n        \"WPRETH\",\n        \"QLCBTC\",\n        \"QLCETH\",\n        \"SYSBTC\",\n        \"SYSETH\",\n        \"SYSBNB\",\n        \"QLCBNB\",\n        \"GRSBTC\",\n        \"GRSETH\",\n        \"ADAUSDT\",\n        \"ADABNB\",\n        \"CLOAKBTC\",\n        \"CLOAKETH\",\n        \"GNTBTC\",\n        \"GNTETH\",\n        \"GNTBNB\",\n        \"LOOMBTC\",\n        \"LOOMETH\",\n        \"LOOMBNB\",\n        \"XRPUSDT\",\n        \"BCNBTC\",\n        \"BCNETH\",\n        \"BCNBNB\",\n        \"REPBTC\",\n        \"REPETH\",\n        \"REPBNB\",\n        \"BTCTUSD\",\n        \"TUSDBTC\",\n        \"ETHTUSD\",\n        \"TUSDETH\",\n        \"TUSDBNB\",\n        \"ZENBTC\",\n        \"ZENETH\",\n        \"ZENBNB\",\n        \"SKYBTC\",\n        \"SKYETH\",\n        \"SKYBNB\",\n        \"EOSUSDT\",\n        \"EOSBNB\",\n        \"CVCBTC\",\n        \"CVCETH\",\n        \"CVCBNB\",\n        \"THETABTC\",\n        \"THETAETH\",\n        \"THETABNB\",\n        \"XRPBNB\",\n        \"TUSDUSDT\",\n        \"IOTAUSDT\",\n        \"XLMUSDT\",\n        \"IOTXBTC\",\n        \"IOTXETH\",\n        \"QKCBTC\",\n        \"QKCETH\",\n        \"AGIBTC\",\n        \"AGIETH\",\n        \"AGIBNB\",\n        \"NXSBTC\",\n        \"NXSETH\",\n        \"NXSBNB\",\n        \"ENJBNB\",\n        \"DATABTC\",\n        \"DATAETH\",\n        \"ONTUSDT\",\n        \"TRXBNB\",\n        \"TRXUSDT\",\n        \"ETCUSDT\",\n        \"ETCBNB\",\n        \"ICXUSDT\",\n        \"SCBTC\",\n        \"SCETH\",\n        \"SCBNB\",\n        \"NPXSBTC\",\n        \"NPXSETH\",\n        \"VENUSDT\",\n        \"KEYBTC\",\n        \"KEYETH\",\n        \"NASBTC\",\n        \"NASETH\",\n        \"NASBNB\",\n        \"MFTBTC\",\n        \"MFTETH\",\n        \"MFTBNB\",\n        \"DENTBTC\",\n        \"DENTETH\",\n        \"ARDRBTC\",\n        \"ARDRETH\",\n        \"ARDRBNB\",\n        \"NULSUSDT\",\n        \"HOTBTC\",\n        \"HOTETH\",\n        \"VETBTC\",\n        \"VETETH\",\n        \"VETUSDT\",\n        \"VETBNB\",\n        \"DOCKBTC\",\n        \"DOCKETH\",\n        \"POLYBTC\",\n        \"POLYBNB\",\n        \"PHXBTC\",\n        \"PHXETH\",\n        \"PHXBNB\",\n        \"HCBTC\",\n        \"HCETH\",\n        \"GOBTC\",\n        \"GOBNB\",\n        \"PAXBTC\",\n        \"PAXBNB\",\n        \"PAXUSDT\",\n        \"PAXETH\",\n        \"RVNBTC\",\n        \"RVNBNB\",\n        \"DCRBTC\",\n        \"DCRBNB\",\n        \"USDCBNB\",\n        \"MITHBTC\",\n        \"MITHBNB\",\n        \"BCHABCBTC\",\n        \"BCHSVBTC\",\n        \"BCHABCUSDT\",\n        \"BCHSVUSDT\",\n        \"BNBPAX\",\n        \"BTCPAX\",\n        \"ETHPAX\",\n        \"XRPPAX\",\n        \"EOSPAX\",\n        \"XLMPAX\",\n        \"RENBTC\",\n        \"RENBNB\",\n        \"BNBTUSD\",\n        \"XRPTUSD\",\n        \"EOSTUSD\",\n        \"XLMTUSD\",\n        \"BNBUSDC\",\n        \"BTCUSDC\",\n        \"ETHUSDC\",\n        \"XRPUSDC\",\n        \"EOSUSDC\",\n        \"XLMUSDC\",\n        \"USDCUSDT\",\n        \"ADATUSD\",\n        \"TRXTUSD\",\n        \"NEOTUSD\",\n        \"TRXXRP\",\n        \"XZCXRP\",\n        \"PAXTUSD\",\n        \"USDCTUSD\",\n        \"USDCPAX\",\n        \"LINKUSDT\",\n        \"LINKTUSD\",\n        \"LINKPAX\",\n        \"LINKUSDC\",\n        \"WAVESUSDT\",\n        \"WAVESTUSD\",\n        \"WAVESPAX\",\n        \"WAVESUSDC\",\n        \"BCHABCTUSD\",\n        \"BCHABCPAX\",\n        \"BCHABCUSDC\",\n        \"BCHSVTUSD\",\n        \"BCHSVPAX\",\n        \"BCHSVUSDC\",\n        \"LTCTUSD\",\n        \"LTCPAX\",\n        \"LTCUSDC\",\n        \"TRXPAX\",\n        \"TRXUSDC\",\n        \"BTTBTC\",\n        \"BTTBNB\",\n        \"BTTUSDT\",\n        \"BNBUSDS\",\n        \"BTCUSDS\",\n        \"USDSUSDT\",\n        \"USDSPAX\",\n        \"USDSTUSD\",\n        \"USDSUSDC\",\n        \"BTTPAX\",\n        \"BTTTUSD\",\n        \"BTTUSDC\",\n        \"ONGBNB\",\n        \"ONGBTC\",\n        \"ONGUSDT\",\n        \"HOTBNB\",\n        \"HOTUSDT\",\n        \"ZILUSDT\",\n        \"ZRXBNB\",\n        \"ZRXUSDT\",\n        \"FETBNB\",\n        \"FETBTC\",\n        \"FETUSDT\",\n        \"BATUSDT\",\n        \"XMRBNB\",\n        \"XMRUSDT\",\n        \"ZECBNB\",\n        \"ZECUSDT\",\n        \"ZECPAX\",\n        \"ZECTUSD\",\n        \"ZECUSDC\",\n        \"IOSTBNB\",\n        \"IOSTUSDT\",\n        \"CELRBNB\",\n        \"CELRBTC\",\n        \"CELRUSDT\",\n        \"ADAPAX\",\n        \"ADAUSDC\",\n        \"NEOPAX\",\n        \"NEOUSDC\",\n        \"DASHBNB\",\n        \"DASHUSDT\",\n        \"NANOUSDT\",\n        \"OMGBNB\",\n        \"OMGUSDT\",\n        \"THETAUSDT\",\n        \"ENJUSDT\",\n        \"MITHUSDT\",\n        \"MATICBNB\",\n        \"MATICBTC\",\n        \"MATICUSDT\",\n        \"ATOMBNB\",\n        \"ATOMBTC\",\n        \"ATOMUSDT\",\n        \"ATOMUSDC\",\n        \"ATOMPAX\",\n        \"ATOMTUSD\",\n        \"ETCUSDC\",\n        \"ETCPAX\",\n        \"ETCTUSD\",\n        \"BATUSDC\",\n        \"BATPAX\",\n        \"BATTUSD\",\n        \"PHBBNB\",\n        \"PHBBTC\",\n        \"PHBUSDC\",\n        \"PHBTUSD\",\n        \"PHBPAX\",\n        \"TFUELBNB\",\n        \"TFUELBTC\",\n        \"TFUELUSDT\",\n        \"TFUELUSDC\",\n        \"TFUELTUSD\",\n        \"TFUELPAX\",\n        \"ONEBNB\",\n        \"ONEBTC\",\n        \"ONEUSDT\",\n        \"ONETUSD\",\n        \"ONEPAX\",\n        \"ONEUSDC\",\n        \"FTMBNB\",\n        \"FTMBTC\",\n        \"FTMUSDT\",\n        \"FTMTUSD\",\n        \"FTMPAX\",\n        \"FTMUSDC\",\n        \"BTCBBTC\",\n        \"BCPTTUSD\",\n        \"BCPTPAX\",\n        \"BCPTUSDC\",\n        \"ALGOBNB\",\n        \"ALGOBTC\",\n        \"ALGOUSDT\",\n        \"ALGOTUSD\",\n        \"ALGOPAX\",\n        \"ALGOUSDC\",\n        \"USDSBUSDT\",\n        \"USDSBUSDS\",\n        \"GTOUSDT\",\n        \"GTOPAX\",\n        \"GTOTUSD\",\n        \"GTOUSDC\",\n        \"ERDBNB\",\n        \"ERDBTC\",\n        \"ERDUSDT\",\n        \"ERDPAX\",\n        \"ERDUSDC\",\n        \"DOGEBNB\",\n        \"DOGEBTC\",\n        \"DOGEUSDT\",\n        \"DOGEPAX\",\n        \"DOGEUSDC\",\n        \"DUSKBNB\",\n        \"DUSKBTC\",\n        \"DUSKUSDT\",\n        \"DUSKUSDC\",\n        \"DUSKPAX\",\n        \"BGBPUSDC\",\n        \"ANKRBNB\",\n        \"ANKRBTC\",\n        \"ANKRUSDT\",\n        \"ANKRTUSD\",\n        \"ANKRPAX\",\n        \"ANKRUSDC\",\n        \"ONTPAX\",\n        \"ONTUSDC\",\n        \"WINBNB\",\n        \"WINBTC\",\n        \"WINUSDT\",\n        \"WINUSDC\",\n        \"COSBNB\",\n        \"COSBTC\",\n        \"COSUSDT\",\n        \"TUSDBTUSD\",\n        \"NPXSUSDT\",\n        \"NPXSUSDC\",\n        \"COCOSBNB\",\n        \"COCOSBTC\",\n        \"COCOSUSDT\",\n        \"MTLUSDT\",\n        \"TOMOBNB\",\n        \"TOMOBTC\",\n        \"TOMOUSDT\",\n        \"TOMOUSDC\",\n        \"PERLBNB\",\n        \"PERLBTC\",\n        \"PERLUSDC\",\n        \"PERLUSDT\",\n        \"DENTUSDT\",\n        \"MFTUSDT\",\n        \"KEYUSDT\",\n        \"STORMUSDT\",\n        \"DOCKUSDT\",\n        \"WANUSDT\",\n        \"FUNUSDT\",\n        \"CVCUSDT\",\n        \"BTTTRX\",\n        \"WINTRX\",\n        \"CHZBNB\",\n        \"CHZBTC\",\n        \"CHZUSDT\",\n        \"BANDBNB\",\n        \"BANDBTC\",\n        \"BANDUSDT\",\n        \"BNBBUSD\",\n        \"BTCBUSD\",\n        \"BUSDUSDT\",\n        \"BEAMBNB\",\n        \"BEAMBTC\",\n        \"BEAMUSDT\",\n        \"XTZBNB\",\n        \"XTZBTC\",\n        \"XTZUSDT\",\n        \"RENUSDT\",\n        \"RVNUSDT\",\n        \"HCUSDT\",\n        \"HBARBNB\",\n        \"HBARBTC\",\n        \"HBARUSDT\",\n        \"NKNBNB\",\n        \"NKNBTC\",\n        \"NKNUSDT\",\n        \"XRPBUSD\",\n        \"ETHBUSD\",\n        \"BCHABCBUSD\",\n        \"LTCBUSD\",\n        \"LINKBUSD\",\n        \"ETCBUSD\",\n        \"STXBNB\",\n        \"STXBTC\",\n        \"STXUSDT\",\n        \"KAVABNB\",\n        \"KAVABTC\",\n        \"KAVAUSDT\",\n        \"BUSDNGN\",\n        \"BNBNGN\",\n        \"BTCNGN\",\n        \"ARPABNB\",\n        \"ARPABTC\",\n        \"ARPAUSDT\",\n        \"TRXBUSD\",\n        \"EOSBUSD\",\n        \"IOTXUSDT\",\n        \"RLCUSDT\",\n        \"MCOUSDT\",\n        \"XLMBUSD\",\n        \"ADABUSD\",\n        \"CTXCBNB\",\n        \"CTXCBTC\",\n        \"CTXCUSDT\",\n        \"BCHBNB\",\n        \"BCHBTC\",\n        \"BCHUSDT\",\n        \"BCHUSDC\",\n        \"BCHTUSD\",\n        \"BCHPAX\",\n        \"BCHBUSD\",\n        \"BTCRUB\",\n        \"ETHRUB\",\n        \"XRPRUB\",\n        \"BNBRUB\",\n        \"TROYBNB\",\n        \"TROYBTC\",\n        \"TROYUSDT\",\n        \"BUSDRUB\",\n        \"QTUMBUSD\",\n        \"VETBUSD\",\n        \"VITEBNB\",\n        \"VITEBTC\",\n        \"VITEUSDT\",\n        \"FTTBNB\",\n        \"FTTBTC\",\n        \"FTTUSDT\",\n        \"BTCTRY\",\n        \"BNBTRY\",\n        \"BUSDTRY\",\n        \"ETHTRY\",\n        \"XRPTRY\",\n        \"USDTTRY\",\n        \"USDTRUB\",\n        \"BTCEUR\",\n        \"ETHEUR\",\n        \"BNBEUR\",\n        \"XRPEUR\",\n        \"EURBUSD\",\n        \"EURUSDT\",\n        \"OGNBNB\",\n        \"OGNBTC\",\n        \"OGNUSDT\",\n        \"DREPBNB\",\n        \"DREPBTC\",\n        \"DREPUSDT\",\n        \"BULLUSDT\",\n        \"BULLBUSD\",\n        \"BEARUSDT\",\n        \"BEARBUSD\",\n        \"ETHBULLUSDT\",\n        \"ETHBULLBUSD\",\n        \"ETHBEARUSDT\",\n        \"ETHBEARBUSD\",\n        \"TCTBNB\",\n        \"TCTBTC\",\n        \"TCTUSDT\",\n        \"WRXBNB\",\n        \"WRXBTC\",\n        \"WRXUSDT\",\n        \"ICXBUSD\",\n        \"BTSUSDT\",\n        \"BTSBUSD\",\n        \"LSKUSDT\",\n        \"BNTUSDT\",\n        \"BNTBUSD\",\n        \"LTOBNB\",\n        \"LTOBTC\",\n        \"LTOUSDT\",\n        \"ATOMBUSD\",\n        \"DASHBUSD\",\n        \"NEOBUSD\",\n        \"WAVESBUSD\",\n        \"XTZBUSD\",\n        \"EOSBULLUSDT\",\n        \"EOSBULLBUSD\",\n        \"EOSBEARUSDT\",\n        \"EOSBEARBUSD\",\n        \"XRPBULLUSDT\",\n        \"XRPBULLBUSD\",\n        \"XRPBEARUSDT\",\n        \"XRPBEARBUSD\",\n        \"BATBUSD\",\n        \"ENJBUSD\",\n        \"NANOBUSD\",\n        \"ONTBUSD\",\n        \"RVNBUSD\",\n        \"STRATBUSD\",\n        \"STRATBNB\",\n        \"STRATUSDT\",\n        \"AIONBUSD\",\n        \"AIONUSDT\",\n        \"MBLBNB\",\n        \"MBLBTC\",\n        \"MBLUSDT\",\n        \"COTIBNB\",\n        \"COTIBTC\",\n        \"COTIUSDT\",\n        \"ALGOBUSD\",\n        \"BTTBUSD\",\n        \"TOMOBUSD\",\n        \"XMRBUSD\",\n        \"ZECBUSD\",\n        \"BNBBULLUSDT\",\n        \"BNBBULLBUSD\",\n        \"BNBBEARUSDT\",\n        \"BNBBEARBUSD\",\n        \"STPTBNB\",\n        \"STPTBTC\",\n        \"STPTUSDT\",\n        \"BTCZAR\",\n        \"ETHZAR\",\n        \"BNBZAR\",\n        \"USDTZAR\",\n        \"BUSDZAR\",\n        \"BTCBKRW\",\n        \"ETHBKRW\",\n        \"BNBBKRW\",\n        \"WTCUSDT\",\n        \"DATABUSD\",\n        \"DATAUSDT\",\n        \"XZCUSDT\",\n        \"SOLBNB\",\n        \"SOLBTC\",\n        \"SOLUSDT\",\n        \"SOLBUSD\",\n        \"BTCIDRT\",\n        \"BNBIDRT\",\n        \"USDTIDRT\",\n        \"BUSDIDRT\",\n        \"CTSIBTC\",\n        \"CTSIUSDT\",\n        \"CTSIBNB\",\n        \"CTSIBUSD\",\n        \"HIVEBNB\",\n        \"HIVEBTC\",\n        \"HIVEUSDT\",\n        \"CHRBNB\",\n        \"CHRBTC\",\n        \"CHRUSDT\",\n        \"BTCUPUSDT\",\n        \"BTCDOWNUSDT\",\n        \"GXSUSDT\",\n        \"ARDRUSDT\",\n        \"ERDBUSD\",\n        \"LENDUSDT\",\n        \"HBARBUSD\",\n        \"MATICBUSD\",\n        \"WRXBUSD\",\n        \"ZILBUSD\",\n        \"MDTBNB\",\n        \"MDTBTC\",\n        \"MDTUSDT\",\n        \"STMXBNB\",\n        \"STMXBTC\",\n        \"STMXETH\",\n        \"STMXUSDT\",\n        \"KNCBUSD\",\n        \"KNCUSDT\",\n        \"REPBUSD\",\n        \"REPUSDT\",\n        \"LRCBUSD\",\n        \"LRCUSDT\",\n        \"IQBNB\",\n        \"IQBUSD\",\n        \"PNTBTC\",\n        \"PNTUSDT\",\n        \"BTCGBP\",\n        \"ETHGBP\",\n        \"XRPGBP\",\n        \"BNBGBP\",\n        \"GBPBUSD\",\n        \"DGBBNB\",\n        \"DGBBTC\",\n        \"DGBBUSD\",\n        \"BTCUAH\",\n        \"USDTUAH\",\n        \"COMPBTC\",\n        \"COMPBNB\",\n        \"COMPBUSD\",\n        \"COMPUSDT\",\n        \"BTCBIDR\",\n        \"ETHBIDR\",\n        \"BNBBIDR\",\n        \"BUSDBIDR\",\n        \"USDTBIDR\",\n        \"BKRWUSDT\",\n        \"BKRWBUSD\",\n        \"SCUSDT\",\n        \"ZENUSDT\",\n        \"SXPBTC\",\n        \"SXPBNB\",\n        \"SXPBUSD\",\n        \"SNXBTC\",\n        \"SNXBNB\",\n        \"SNXBUSD\",\n        \"SNXUSDT\",\n        \"ETHUPUSDT\",\n        \"ETHDOWNUSDT\",\n        \"ADAUPUSDT\",\n        \"ADADOWNUSDT\",\n        \"LINKUPUSDT\",\n        \"LINKDOWNUSDT\",\n        \"VTHOBNB\",\n        \"VTHOBUSD\",\n        \"VTHOUSDT\",\n        \"DCRBUSD\",\n        \"DGBUSDT\",\n        \"GBPUSDT\",\n        \"STORJBUSD\",\n        \"SXPUSDT\",\n        \"IRISBNB\",\n        \"IRISBTC\",\n        \"IRISBUSD\",\n        \"MKRBNB\",\n        \"MKRBTC\",\n        \"MKRUSDT\",\n        \"MKRBUSD\",\n        \"DAIBNB\",\n        \"DAIBTC\",\n        \"DAIUSDT\",\n        \"DAIBUSD\",\n        \"RUNEBNB\",\n        \"RUNEBTC\",\n        \"RUNEBUSD\",\n        \"MANABUSD\",\n        \"DOGEBUSD\",\n        \"LENDBUSD\",\n        \"ZRXBUSD\",\n        \"DCRUSDT\",\n        \"STORJUSDT\",\n        \"XRPBKRW\",\n        \"ADABKRW\",\n        \"BTCAUD\",\n        \"ETHAUD\",\n        \"AUDBUSD\",\n        \"FIOBNB\",\n        \"FIOBTC\",\n        \"FIOBUSD\",\n        \"BNBUPUSDT\",\n        \"BNBDOWNUSDT\",\n        \"XTZUPUSDT\",\n        \"XTZDOWNUSDT\",\n        \"AVABNB\",\n        \"AVABTC\",\n        \"AVABUSD\",\n        \"USDTBKRW\",\n        \"BUSDBKRW\",\n        \"IOTABUSD\",\n        \"MANAUSDT\",\n        \"XRPAUD\",\n        \"BNBAUD\",\n        \"AUDUSDT\",\n        \"BALBNB\",\n        \"BALBTC\",\n        \"BALBUSD\",\n        \"YFIBNB\",\n        \"YFIBTC\",\n        \"YFIBUSD\",\n        \"YFIUSDT\",\n        \"BLZBUSD\",\n        \"KMDBUSD\",\n        \"BALUSDT\",\n        \"BLZUSDT\",\n        \"IRISUSDT\",\n        \"KMDUSDT\",\n        \"BTCDAI\",\n        \"ETHDAI\",\n        \"BNBDAI\",\n        \"USDTDAI\",\n        \"BUSDDAI\",\n        \"JSTBNB\",\n        \"JSTBTC\",\n        \"JSTBUSD\",\n        \"JSTUSDT\",\n        \"SRMBNB\",\n        \"SRMBTC\",\n        \"SRMBUSD\",\n        \"SRMUSDT\",\n        \"ANTBNB\",\n        \"ANTBTC\",\n        \"ANTBUSD\",\n        \"ANTUSDT\",\n        \"CRVBNB\",\n        \"CRVBTC\",\n        \"CRVBUSD\",\n        \"CRVUSDT\",\n        \"SANDBNB\",\n        \"SANDBTC\",\n        \"SANDUSDT\",\n        \"SANDBUSD\",\n        \"OCEANBNB\",\n        \"OCEANBTC\",\n        \"OCEANBUSD\",\n        \"OCEANUSDT\",\n        \"NMRBNB\",\n        \"NMRBTC\",\n        \"NMRBUSD\",\n        \"NMRUSDT\",\n        \"DOTBNB\",\n        \"DOTBTC\",\n        \"DOTBUSD\",\n        \"DOTUSDT\",\n        \"LUNABNB\",\n        \"LUNABTC\",\n        \"LUNABUSD\",\n        \"LUNAUSDT\",\n        \"IDEXBTC\",\n        \"IDEXBUSD\",\n        \"RSRBNB\",\n        \"RSRBTC\",\n        \"RSRBUSD\",\n        \"RSRUSDT\",\n        \"PAXGBNB\",\n        \"PAXGBTC\",\n        \"PAXGBUSD\",\n        \"PAXGUSDT\",\n        \"WNXMBNB\",\n        \"WNXMBTC\",\n        \"WNXMBUSD\",\n        \"WNXMUSDT\",\n        \"TRBBNB\",\n        \"TRBBTC\",\n        \"TRBBUSD\",\n        \"TRBUSDT\",\n        \"ETHNGN\",\n        \"DOTBIDR\",\n        \"LINKAUD\",\n        \"SXPAUD\",\n        \"BZRXBNB\",\n        \"BZRXBTC\",\n        \"BZRXBUSD\",\n        \"BZRXUSDT\",\n        \"WBTCBTC\",\n        \"WBTCETH\",\n        \"SUSHIBNB\",\n        \"SUSHIBTC\",\n        \"SUSHIBUSD\",\n        \"SUSHIUSDT\",\n        \"YFIIBNB\",\n        \"YFIIBTC\",\n        \"YFIIBUSD\",\n        \"YFIIUSDT\",\n        \"KSMBNB\",\n        \"KSMBTC\",\n        \"KSMBUSD\",\n        \"KSMUSDT\",\n        \"EGLDBNB\",\n        \"EGLDBTC\",\n        \"EGLDBUSD\",\n        \"EGLDUSDT\",\n        \"DIABNB\",\n        \"DIABTC\",\n        \"DIABUSD\",\n        \"DIAUSDT\",\n        \"RUNEUSDT\",\n        \"FIOUSDT\",\n        \"UMABTC\",\n        \"UMAUSDT\",\n        \"EOSUPUSDT\",\n        \"EOSDOWNUSDT\",\n        \"TRXUPUSDT\",\n        \"TRXDOWNUSDT\",\n        \"XRPUPUSDT\",\n        \"XRPDOWNUSDT\",\n        \"DOTUPUSDT\",\n        \"DOTDOWNUSDT\",\n        \"SRMBIDR\",\n        \"ONEBIDR\",\n        \"LINKTRY\",\n        \"USDTNGN\",\n        \"BELBNB\",\n        \"BELBTC\",\n        \"BELBUSD\",\n        \"BELUSDT\",\n        \"WINGBNB\",\n        \"WINGBTC\",\n        \"SWRVBNB\",\n        \"SWRVBUSD\",\n        \"WINGBUSD\",\n        \"WINGUSDT\",\n        \"LTCUPUSDT\",\n        \"LTCDOWNUSDT\",\n        \"LENDBKRW\",\n        \"SXPEUR\",\n        \"CREAMBNB\",\n        \"CREAMBUSD\",\n        \"UNIBNB\",\n        \"UNIBTC\",\n        \"UNIBUSD\",\n        \"UNIUSDT\",\n        \"NBSBTC\",\n        \"NBSUSDT\",\n        \"OXTBTC\",\n        \"OXTUSDT\",\n        \"SUNBTC\",\n        \"SUNUSDT\",\n        \"AVAXBNB\",\n        \"AVAXBTC\",\n        \"AVAXBUSD\",\n        \"AVAXUSDT\",\n        \"HNTBTC\",\n        \"HNTUSDT\",\n        \"BAKEBNB\",\n        \"BURGERBNB\",\n        \"SXPBIDR\",\n        \"LINKBKRW\",\n        \"FLMBNB\",\n        \"FLMBTC\",\n        \"FLMBUSD\",\n        \"FLMUSDT\",\n        \"SCRTBTC\",\n        \"SCRTETH\",\n        \"CAKEBNB\",\n        \"CAKEBUSD\",\n        \"SPARTABNB\",\n        \"UNIUPUSDT\",\n        \"UNIDOWNUSDT\",\n        \"ORNBTC\",\n        \"ORNUSDT\",\n        \"TRXNGN\",\n        \"SXPTRY\",\n        \"UTKBTC\",\n        \"UTKUSDT\",\n        \"XVSBNB\",\n        \"XVSBTC\",\n        \"XVSBUSD\",\n        \"XVSUSDT\",\n        \"ALPHABNB\",\n        \"ALPHABTC\",\n        \"ALPHABUSD\",\n        \"ALPHAUSDT\",\n        \"VIDTBTC\",\n        \"VIDTBUSD\",\n        \"AAVEBNB\",\n        \"BTCBRL\",\n        \"USDTBRL\",\n        \"AAVEBTC\",\n        \"AAVEETH\",\n        \"AAVEBUSD\",\n        \"AAVEUSDT\",\n        \"AAVEBKRW\",\n        \"NEARBNB\",\n        \"NEARBTC\",\n        \"NEARBUSD\",\n        \"NEARUSDT\",\n        \"SXPUPUSDT\",\n        \"SXPDOWNUSDT\",\n        \"DOTBKRW\",\n        \"SXPGBP\",\n        \"FILBNB\",\n        \"FILBTC\",\n        \"FILBUSD\",\n        \"FILUSDT\",\n        \"FILUPUSDT\",\n        \"FILDOWNUSDT\",\n        \"YFIUPUSDT\",\n        \"YFIDOWNUSDT\",\n        \"INJBNB\",\n        \"INJBTC\",\n        \"INJBUSD\",\n        \"INJUSDT\",\n        \"AERGOBTC\",\n        \"AERGOBUSD\",\n        \"LINKEUR\",\n        \"ONEBUSD\",\n        \"EASYETH\",\n        \"AUDIOBTC\",\n        \"AUDIOBUSD\",\n        \"AUDIOUSDT\",\n        \"CTKBNB\",\n        \"CTKBTC\",\n        \"CTKBUSD\",\n        \"CTKUSDT\",\n        \"BCHUPUSDT\",\n        \"BCHDOWNUSDT\",\n        \"BOTBTC\",\n        \"BOTBUSD\",\n        \"ETHBRL\",\n        \"DOTEUR\",\n        \"AKROBTC\",\n        \"AKROUSDT\",\n        \"KP3RBNB\",\n        \"KP3RBUSD\",\n        \"AXSBNB\",\n        \"AXSBTC\",\n        \"AXSBUSD\",\n        \"AXSUSDT\",\n        \"HARDBNB\",\n        \"HARDBTC\",\n        \"HARDBUSD\",\n        \"HARDUSDT\",\n        \"BNBBRL\",\n        \"LTCEUR\",\n        \"RENBTCBTC\",\n        \"RENBTCETH\",\n        \"DNTBUSD\",\n        \"DNTUSDT\",\n        \"SLPETH\",\n        \"ADAEUR\",\n        \"LTCNGN\",\n        \"CVPETH\",\n        \"CVPBUSD\",\n        \"STRAXBTC\",\n        \"STRAXETH\",\n        \"STRAXBUSD\",\n        \"STRAXUSDT\",\n        \"FORBTC\",\n        \"FORBUSD\",\n        \"UNFIBNB\",\n        \"UNFIBTC\",\n        \"UNFIBUSD\",\n        \"UNFIUSDT\",\n        \"FRONTETH\",\n        \"FRONTBUSD\",\n        \"BCHABUSD\",\n        \"ROSEBTC\",\n        \"ROSEBUSD\",\n        \"ROSEUSDT\",\n        \"AVAXTRY\",\n        \"BUSDBRL\",\n        \"AVAUSDT\",\n        \"SYSBUSD\",\n        \"XEMUSDT\",\n        \"HEGICETH\",\n        \"HEGICBUSD\",\n        \"AAVEUPUSDT\",\n        \"AAVEDOWNUSDT\",\n        \"PROMBNB\",\n        \"PROMBUSD\",\n        \"XRPBRL\",\n        \"XRPNGN\",\n        \"SKLBTC\",\n        \"SKLBUSD\",\n        \"SKLUSDT\",\n        \"BCHEUR\",\n        \"YFIEUR\",\n        \"ZILBIDR\",\n        \"SUSDBTC\",\n        \"SUSDETH\",\n        \"SUSDUSDT\",\n        \"COVERETH\",\n        \"COVERBUSD\",\n        \"GLMBTC\",\n        \"GLMETH\",\n        \"GHSTETH\",\n        \"GHSTBUSD\",\n        \"SUSHIUPUSDT\",\n        \"SUSHIDOWNUSDT\",\n        \"XLMUPUSDT\",\n        \"XLMDOWNUSDT\",\n        \"LINKBRL\",\n        \"LINKNGN\",\n        \"LTCRUB\",\n        \"TRXTRY\",\n        \"XLMEUR\",\n        \"DFETH\",\n        \"DFBUSD\",\n        \"GRTBTC\",\n        \"GRTETH\",\n        \"GRTUSDT\",\n        \"JUVBTC\",\n        \"JUVBUSD\",\n        \"JUVUSDT\",\n        \"PSGBTC\",\n        \"PSGBUSD\",\n        \"PSGUSDT\",\n        \"BUSDBVND\",\n        \"USDTBVND\",\n        \"1INCHBTC\",\n        \"1INCHUSDT\",\n        \"REEFBTC\",\n        \"REEFUSDT\",\n        \"OGBTC\",\n        \"OGUSDT\",\n        \"ATMBTC\",\n        \"ATMUSDT\",\n        \"ASRBTC\",\n        \"ASRUSDT\",\n        \"CELOBTC\",\n        \"CELOUSDT\",\n        \"RIFBTC\",\n        \"RIFUSDT\",\n        \"CHZTRY\",\n        \"XLMTRY\",\n        \"LINKGBP\",\n        \"GRTEUR\",\n        \"BTCSTBTC\",\n        \"BTCSTBUSD\",\n        \"BTCSTUSDT\",\n        \"TRUBTC\",\n        \"TRUBUSD\",\n        \"TRUUSDT\",\n        \"DEXEETH\",\n        \"DEXEBUSD\",\n        \"EOSEUR\",\n        \"LTCBRL\",\n        \"USDCBUSD\",\n        \"TUSDBUSD\",\n        \"PAXBUSD\",\n        \"CKBBTC\",\n        \"CKBBUSD\",\n        \"CKBUSDT\",\n        \"TWTBTC\",\n        \"TWTBUSD\",\n        \"TWTUSDT\",\n        \"FIROBTC\",\n        \"FIROETH\",\n        \"FIROUSDT\",\n        \"BETHETH\",\n        \"DOGEEUR\",\n        \"DOGETRY\",\n        \"DOGEAUD\",\n        \"DOGEBRL\",\n        \"DOTNGN\",\n        \"PROSETH\",\n        \"LITBTC\",\n        \"LITBUSD\",\n        \"LITUSDT\",\n        \"BTCVAI\",\n        \"BUSDVAI\",\n        \"SFPBTC\",\n        \"SFPBUSD\",\n        \"SFPUSDT\",\n        \"DOGEGBP\",\n        \"DOTTRY\",\n        \"FXSBTC\",\n        \"FXSBUSD\",\n        \"DODOBTC\",\n        \"DODOBUSD\",\n        \"DODOUSDT\",\n        \"FRONTBTC\",\n        \"EASYBTC\",\n        \"CAKEBTC\",\n        \"CAKEUSDT\",\n        \"BAKEBUSD\",\n        \"UFTETH\",\n        \"UFTBUSD\",\n        \"1INCHBUSD\",\n        \"BANDBUSD\",\n        \"GRTBUSD\",\n        \"IOSTBUSD\",\n        \"OMGBUSD\",\n        \"REEFBUSD\",\n        \"ACMBTC\",\n        \"ACMBUSD\",\n        \"ACMUSDT\",\n        \"AUCTIONBTC\",\n        \"AUCTIONBUSD\",\n        \"PHABTC\",\n        \"PHABUSD\",\n        \"DOTGBP\",\n        \"ADATRY\",\n        \"ADABRL\",\n        \"ADAGBP\",\n        \"TVKBTC\",\n        \"TVKBUSD\",\n        \"BADGERBTC\",\n        \"BADGERBUSD\",\n        \"BADGERUSDT\",\n        \"FISBTC\",\n        \"FISBUSD\",\n        \"FISUSDT\",\n        \"DOTBRL\",\n        \"ADAAUD\",\n        \"HOTTRY\",\n        \"EGLDEUR\",\n        \"OMBTC\",\n        \"OMBUSD\",\n        \"OMUSDT\",\n        \"PONDBTC\",\n        \"PONDBUSD\",\n        \"PONDUSDT\",\n        \"DEGOBTC\",\n        \"DEGOBUSD\",\n        \"DEGOUSDT\",\n        \"AVAXEUR\",\n        \"BTTTRY\",\n        \"CHZBRL\",\n        \"UNIEUR\",\n        \"ALICEBTC\",\n        \"ALICEBUSD\",\n        \"ALICEUSDT\",\n        \"CHZBUSD\",\n        \"CHZEUR\",\n        \"CHZGBP\",\n        \"BIFIBNB\",\n        \"BIFIBUSD\",\n        \"LINABTC\",\n        \"LINABUSD\",\n        \"LINAUSDT\",\n        \"ADARUB\",\n        \"ENJBRL\",\n        \"ENJEUR\",\n        \"MATICEUR\",\n        \"NEOTRY\",\n        \"PERPBTC\",\n        \"PERPBUSD\",\n        \"PERPUSDT\",\n        \"RAMPBTC\",\n        \"RAMPBUSD\",\n        \"RAMPUSDT\",\n        \"SUPERBTC\",\n        \"SUPERBUSD\",\n        \"SUPERUSDT\",\n        \"CFXBTC\",\n        \"CFXBUSD\",\n        \"CFXUSDT\",\n        \"ENJGBP\",\n        \"EOSTRY\",\n        \"LTCGBP\",\n        \"LUNAEUR\",\n        \"RVNTRY\",\n        \"THETAEUR\",\n        \"XVGBUSD\",\n        \"EPSBTC\",\n        \"EPSBUSD\",\n        \"EPSUSDT\",\n        \"AUTOBTC\",\n        \"AUTOBUSD\",\n        \"AUTOUSDT\",\n        \"TKOBTC\",\n        \"TKOBIDR\",\n        \"TKOBUSD\",\n        \"TKOUSDT\",\n        \"PUNDIXETH\",\n        \"PUNDIXUSDT\",\n        \"BTTBRL\",\n        \"BTTEUR\",\n        \"HOTEUR\",\n        \"WINEUR\",\n        \"TLMBTC\",\n        \"TLMBUSD\",\n        \"TLMUSDT\",\n        \"1INCHUPUSDT\",\n        \"1INCHDOWNUSDT\",\n        \"BTGBUSD\",\n        \"BTGUSDT\",\n        \"HOTBUSD\",\n        \"BNBUAH\",\n        \"ONTTRY\",\n        \"VETEUR\",\n        \"VETGBP\",\n        \"WINBRL\",\n        \"MIRBTC\",\n        \"MIRBUSD\",\n        \"MIRUSDT\",\n        \"BARBTC\",\n        \"BARBUSD\",\n        \"BARUSDT\",\n        \"FORTHBTC\",\n        \"FORTHBUSD\",\n        \"FORTHUSDT\",\n        \"CAKEGBP\",\n        \"DOGERUB\",\n        \"HOTBRL\",\n        \"WRXEUR\",\n        \"EZBTC\",\n        \"EZETH\",\n        \"BAKEUSDT\",\n        \"BURGERBUSD\",\n        \"BURGERUSDT\",\n        \"SLPBUSD\",\n        \"SLPUSDT\",\n        \"TRXAUD\",\n        \"TRXEUR\",\n        \"VETTRY\"\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Current price",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/currentPrice?search=BNBUSDT",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"currentPrice"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "BNBUSDT",
+							"description": "Pairs"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/currentPrice?search=BNBUSDT,BNBUSDC",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"currentPrice"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "BNBUSDT,BNBUSDC"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"result\": [\n        {\n            \"title\": \"BNB\",\n            \"magnitude\": \"USDT\",\n            \"category\": \"currency\",\n            \"tags\": [\n                \"crypto\",\n                \"pair\"\n            ],\n            \"value\": \"632.42000000\",\n            \"source\": \"binance.com\",\n            \"timestamp\": 1620154262573,\n            \"location\": \"global\"\n        },\n        {\n            \"title\": \"BNB\",\n            \"magnitude\": \"USDC\",\n            \"category\": \"currency\",\n            \"tags\": [\n                \"crypto\",\n                \"pair\"\n            ],\n            \"value\": \"632.03000000\",\n            \"source\": \"binance.com\",\n            \"timestamp\": 1620154262573,\n            \"location\": \"global\"\n        }\n    ]\n}"
+				},
+				{
+					"name": "400 Bad Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/currentPrice?search=",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"currentPrice"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "",
+									"description": "Pairs"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"message\": \"Empty parameter 'search'\"\n}"
+				},
+				{
+					"name": "404 Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/currentPrice?search=TESTUSDT",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"currentPrice"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "TESTUSDT"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"message\": \"Not found 'TESTUSDT'\"\r\n}"
+				}
+			]
+		},
+		{
+			"name": "History",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"qs\": { \"symbol\": \"BNBUSDT\", \"interval\": \"1m\", \"startTime\": 1619205000, \"endTime\": 1619205548, \"limit\":500 } }"
+				},
+				"url": {
+					"raw": "http://localhost:3000/history?pair=BNBUSDT&from=1620071000&to=1620071311",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"history"
+					],
+					"query": [
+						{
+							"key": "pair",
+							"value": "BNBUSDT",
+							"description": "Pair"
+						},
+						{
+							"key": "from",
+							"value": "1620071000"
+						},
+						{
+							"key": "to",
+							"value": "1620071311"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"qs\": { \"symbol\": \"BNBUSDT\", \"interval\": \"1m\", \"startTime\": 1619205000, \"endTime\": 1619205548, \"limit\":500 } }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/history?pair=BNBUSDT&from=1619827200&to=1619913600",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"history"
+							],
+							"query": [
+								{
+									"key": "pair",
+									"value": "BNBUSDT",
+									"description": "Pair"
+								},
+								{
+									"key": "from",
+									"value": "1619827200",
+									"description": "From"
+								},
+								{
+									"key": "to",
+									"value": "1619913600",
+									"description": "To"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"s\": \"ok\",\n    \"t\": [\n        1620071040,\n        1620071100,\n        1620071160,\n        1620071220,\n        1620071280,\n        1620071340\n    ],\n    \"c\": [\n        674.81,\n        673.56,\n        674.31,\n        674.86,\n        674.86,\n        675.66\n    ],\n    \"o\": [\n        674.29,\n        674.89,\n        673.52,\n        674.31,\n        674.86,\n        674.86\n    ],\n    \"h\": [\n        675.82,\n        675,\n        674.31,\n        675.24,\n        675,\n        675.76\n    ],\n    \"l\": [\n        674.18,\n        673,\n        673.18,\n        674.31,\n        673.99,\n        674.65\n    ],\n    \"v\": [\n        1446.9838,\n        2068.8611,\n        755.6776,\n        832.6707,\n        1071.2536,\n        1954.6223\n    ]\n}"
+				},
+				{
+					"name": "400 Bad Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"qs\": { \"symbol\": \"BNBUSDT\", \"interval\": \"1m\", \"startTime\": 1619205000, \"endTime\": 1619205548, \"limit\":500 } }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/history?pair=BNBUSDT",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"history"
+							],
+							"query": [
+								{
+									"key": "pair",
+									"value": "BNBUSDT",
+									"description": "Pair"
+								}
+							]
+						}
+					},
+					"status": "Bad Request",
+					"code": 400,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"message\": \"Missing mandatory parameter 'from'\"\n}"
+				},
+				{
+					"name": "404 Not Found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \"qs\": { \"symbol\": \"BNBUSDT\", \"interval\": \"1m\", \"startTime\": 1619205000, \"endTime\": 1619205548, \"limit\":500 } }"
+						},
+						"url": {
+							"raw": "http://localhost:3000/history?pair=TESTUSDT&from=1620071000&to=1620071311",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"history"
+							],
+							"query": [
+								{
+									"key": "pair",
+									"value": "TESTUSDT",
+									"description": "Pair"
+								},
+								{
+									"key": "from",
+									"value": "1620071000",
+									"description": "From"
+								},
+								{
+									"key": "to",
+									"value": "1620071311",
+									"description": "To"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\r\n    \"message\": \"Not found 'TESTUSDT'\"\r\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,25 @@
+version: "3.3"
+services:
+  db:
+    container_name: worker-db
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+  cache:
+    container_name: worker-cache
+    image: redis
+  worker:
+    container_name: worker-app
+    build:
+      context: .
+    ports:
+      - 3000:3000
+      - 5000:5000
+    environment:
+      - PGHOST=db
+      - PGUSER=postgres
+      - PGPASSWORD=postgres
+      - PGDATABASE=postgres
+      - REDIS_URL=redis://cache
